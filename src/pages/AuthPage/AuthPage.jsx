@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const AuthPage = () => {
   return (
-    <div>
-      <h3>Auth Page</h3>
-    </div>
+    <>
+      <Link to="/">Auth Page</Link>
+    </>
   );
 };
 
