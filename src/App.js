@@ -1,16 +1,16 @@
 import HomePage from "./pages/HomePage/";
-import NotFoundPage from "./pages/NotFoundPage/";
-import MainPage from "./pages/MainPage/";
+import AuthPage from "./pages/AuthPage/";
 import ReportsPage from "./pages/ReportsPage/";
+import NotFoundPage from "./pages/NotFoundPage/";
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <AuthPage />
       <HomePage />
-      <MainPage />
       <ReportsPage />
       <NotFoundPage />
-    </div>
+    </>
   );
 }
 
