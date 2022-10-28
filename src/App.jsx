@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
+import { links } from "./constants/routes";
+//Components
 import HomePage from "./pages/HomePage";
 import AuthPage from "./pages/AuthPage";
 import ReportsPage from "./pages/ReportsPage";
@@ -9,10 +11,10 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<AuthPage />} />
-        <Route path="/home-page" element={<HomePage />} />
-        <Route path="/reports-page" element={<ReportsPage />} />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path={links.authPage} element={<AuthPage />} />
+        <Route path={links.homePage} element={<HomePage />} />
+        <Route path={links.reportsPage} element={<ReportsPage />} />
+        <Route path={links.notFoundPage} element={<NotFoundPage />} />
       </Routes>
     </>
   );
