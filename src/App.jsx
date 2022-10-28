@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-
+//Constants
 import { links } from "./constants/routes";
 //Components
 import HomePage from "./pages/HomePage";
