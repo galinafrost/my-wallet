@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 const AuthPage = () => {
   return (
     <>
-      <Link to="/">Auth Page</Link>
+      <p>Это авторизация</p>
+      <Link to="/home-page">Go to home Page</Link>
     </>
   );
 };
