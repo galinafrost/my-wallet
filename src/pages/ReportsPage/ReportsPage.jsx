@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 
 const ReportsPage = () => {
-  return <Link to="/report-page">Reports Page</Link>;
+  return (
+    <>
+      <p>Это страница отчетов</p>
+      <Link to="/home-page">Вернуться в кабинет</Link>
+    </>
+  );
 };
 
 export default ReportsPage;
