@@ -1,7 +1,9 @@
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { logIn } from "../../redux/auth/aut-slice";
 
 const Form = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
@@ -9,6 +11,7 @@ const Form = () => {
     const form = e.currentTarget;
     dispatch(logIn(form.elements.password.value));
     form.reset();
+    navigate("/home-page", { replace: true });
   };
   return (
     <form onSubmit={handleSubmit}>

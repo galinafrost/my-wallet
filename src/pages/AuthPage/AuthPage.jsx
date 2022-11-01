@@ -1,5 +1,4 @@
 //Components
-
 import Form from "../../components/Form";
 
 const AuthPage = () => {
