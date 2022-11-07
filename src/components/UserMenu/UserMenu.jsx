@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 
-import { logOut } from "../../redux/auth/aut-slice";
+import { logOut } from "../../redux/auth/auth-slice";
 
 const UserMenu = () => {
   const dispatch = useDispatch();

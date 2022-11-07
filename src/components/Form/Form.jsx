@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { logIn } from "../../redux/auth/aut-slice";
+import { logIn } from "../../redux/auth/auth-slice";
 
 const Form = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const Form = () => {
       {/* <label htmlFor="email"></label>
       <input type="email" name="email" /> */}
       {/* <label htmlFor="password"></label> */}
-      <input type="text" name="password" />
+      <input type="password" name="password" />
       <button type="submit">Log in</button>
     </form>
   );
