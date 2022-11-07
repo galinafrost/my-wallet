@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom";
 //Constants
 import { links } from "./constants/routes";
 //Components
+import PrivatRout from "./components/PrivatRout";
+import PublicRout from "./components/PublicRout";
 import HomePage from "./pages/HomePage";
 import AuthPage from "./pages/AuthPage";
 import ReportsPage from "./pages/ReportsPage";
@@ -11,9 +13,13 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path={links.authPage} element={<AuthPage />} />
-        <Route path={links.homePage} element={<HomePage />} />
-        <Route path={links.reportsPage} element={<ReportsPage />} />
+        <Route element={<PublicRout />}>
+          <Route path={links.authPage} element={<AuthPage />} />
+        </Route>
+        <Route element={<PrivatRout />}>
+          <Route path={links.homePage} element={<HomePage />} />
+          <Route path={links.reportsPage} element={<ReportsPage />} />
+        </Route>
         <Route path={links.notFoundPage} element={<NotFoundPage />} />
       </Routes>
     </>
