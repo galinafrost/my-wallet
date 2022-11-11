@@ -7,6 +7,10 @@ ol {
   padding: 0;
 }
 
+.link {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -14,12 +18,28 @@ a {
 address {
   font-style: normal;
 }
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
 h1,
 h2,
 h3,
 h4,
+h5,
 p {
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
 }
