@@ -1,7 +1,10 @@
+//Components
+import Form from "../../components/Form";
+
 const AuthPage = () => {
   return (
     <>
-      <p>Это авторизация</p>
+      <Form />
     </>
   );
 };
