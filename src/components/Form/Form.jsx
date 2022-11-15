@@ -24,6 +24,7 @@ const Form = () => {
         <label htmlFor="password">Password:</label>
         <input type="password" name="password" placeholder="Password" />
         <button type="submit">Log in</button>
+        <button type="submit">Registration</button>
       </form>
     </div>
   );
