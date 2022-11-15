@@ -14,13 +14,18 @@ const Form = () => {
     navigate("/home-page", { replace: true });
   };
   return (
-    <form onSubmit={handleSubmit}>
-      {/* <label htmlFor="email"></label>
-      <input type="email" name="email" /> */}
-      {/* <label htmlFor="password"></label> */}
-      <input type="password" name="password" />
-      <button type="submit">Log in</button>
-    </form>
+    <div>
+      <p>You can log in with your Google Account:</p>
+      <button type="button">Google</button>
+      <p>Or log in using an email and password, after registering:</p>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="email">Email:</label>
+        <input type="email" name="email" placeholder="your@email.com" />
+        <label htmlFor="password">Password:</label>
+        <input type="password" name="password" placeholder="Password" />
+        <button type="submit">Log in</button>
+      </form>
+    </div>
   );
 };
 

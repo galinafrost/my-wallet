@@ -1,10 +1,14 @@
 //Components
-import Form from "../../components/Form";
+
+import Main from "../../components/Main";
+
+import Header from "../../components/Header";
 
 const AuthPage = () => {
   return (
     <>
-      <Form />
+      <Header />
+      <Main />
     </>
   );
 };
