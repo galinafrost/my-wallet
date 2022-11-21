@@ -14,13 +14,16 @@ const Form = () => {
     navigate("/home-page", { replace: true });
   };
   return (
-    <form onSubmit={handleSubmit}>
-      {/* <label htmlFor="email"></label>
-      <input type="email" name="email" /> */}
-      {/* <label htmlFor="password"></label> */}
-      <input type="password" name="password" />
-      <button type="submit">Log in</button>
-    </form>
+    <div>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="email">Email:</label>
+        <input type="email" name="email" placeholder="your@email.com" />
+        <label htmlFor="password">Password:</label>
+        <input type="password" name="password" placeholder="Password" />
+        <button type="submit">Log in</button>
+        <button type="submit">Registration</button>
+      </form>
+    </div>
   );
 };
 
