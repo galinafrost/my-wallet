@@ -15,9 +15,6 @@ const Form = () => {
   };
   return (
     <div>
-      <p>You can log in with your Google Account:</p>
-      <button type="button">Google</button>
-      <p>Or log in using an email and password, after registering:</p>
       <form onSubmit={handleSubmit}>
         <label htmlFor="email">Email:</label>
         <input type="email" name="email" placeholder="your@email.com" />
