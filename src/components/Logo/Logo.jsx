@@ -1,5 +1,7 @@
+import styles from "./Logo.module.scss";
+
 const Logo = () => {
-  return <p>My Wallet</p>;
+  return <p className={styles.text}>My Wallet</p>;
 };
 
 export default Logo;

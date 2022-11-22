@@ -3,9 +3,23 @@
 .root {
   width: 100%;
   height: 56px;
-  padding: 13px 20px;
+  padding: 0 20px;
+  background-color: $white-cl;
 
-  display: flex;
-  align-items: center;
+  @include content-position;
   justify-content: space-between;
+
+  @include mobile {
+    max-width: $breakpoint_mobile;
+  }
+
+  @include tablet {
+    padding: 0 32px;
+    max-width: $breakpoint_tablet;
+  }
+
+  @include desktop {
+    padding: 0 16px;
+    max-width: $breakpoint_desktop;
+  }
 }
