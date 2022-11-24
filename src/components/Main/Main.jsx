@@ -7,10 +7,14 @@ const Main = () => {
   return (
     <main>
       <div className={styles.root}>
-        <h1 className={styles.title}>My Wallet</h1>
-        <p className={styles.text}>Smart Finance</p>
-        <LoginForm />
-        <Form />
+        <div>
+          <h1 className={styles.title}>My Wallet</h1>
+          <p className={styles.text}>Smart Finance</p>
+        </div>
+        <div>
+          <LoginForm />
+          <Form />
+        </div>
       </div>
     </main>
   );

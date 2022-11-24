@@ -14,6 +14,16 @@
     padding-left: 171px;
     background-image: url("../../img/bg-hero-tablet.png");
   }
+
+  @include desktop {
+    padding-top: 174px;
+    padding-bottom: 125px;
+    padding-left: 229px;
+    background-image: url("../../img/bg-hero-desktop.png");
+
+    @include content-position;
+    justify-content: space-between;
+  }
 }
 
 .title {
@@ -26,10 +36,14 @@
 
   @include tablet {
     font-size: 35px;
-    line-height: 14px;
-    letter-spacing: 0.02em;
 
     margin-bottom: 16px;
+  }
+
+  @include desktop {
+    font-size: 45px;
+
+    margin-bottom: 20px;
   }
 }
 
@@ -49,5 +63,9 @@
     letter-spacing: 0.18em;
 
     margin-bottom: 80px;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
   }
 }
