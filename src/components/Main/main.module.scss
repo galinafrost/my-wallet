@@ -8,6 +8,12 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top left;
+
+  @include tablet {
+    padding-top: 136px;
+    padding-left: 171px;
+    background-image: url("../../img/bg-hero-tablet.png");
+  }
 }
 
 .title {
@@ -17,9 +23,18 @@
   letter-spacing: 0.02em;
 
   margin-bottom: 7px;
+
+  @include tablet {
+    font-size: 35px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 16px;
+  }
 }
 
 .text {
+  font-weight: 700;
   font-size: 13px;
   line-height: 1.15;
   letter-spacing: 0.15em;
@@ -27,4 +42,12 @@
   color: $main-txt-cl;
 
   margin-bottom: 50px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.18em;
+
+    margin-bottom: 80px;
+  }
 }

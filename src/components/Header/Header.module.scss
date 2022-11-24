@@ -10,17 +10,11 @@
   @include content-position;
   justify-content: space-between;
 
-  @include mobile {
-    max-width: $breakpoint_mobile;
-  }
-
   @include tablet {
     padding: 0 32px;
-    max-width: $breakpoint_tablet;
   }
 
   @include desktop {
     padding: 0 16px;
-    max-width: $breakpoint_desktop;
   }
 }
