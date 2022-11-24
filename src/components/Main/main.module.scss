@@ -1,0 +1,30 @@
+@import "../../styles/scss/_base.scss";
+
+.root {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 142px;
+  background-image: url("../../img/bg-hero-mobile.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 7px;
+}
+
+.text {
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $main-txt-cl;
+
+  margin-bottom: 50px;
+}
