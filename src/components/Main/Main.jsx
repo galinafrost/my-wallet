@@ -11,7 +11,7 @@ const Main = () => {
           <h1 className={styles.title}>My Wallet</h1>
           <p className={styles.text}>Smart Finance</p>
         </div>
-        <div>
+        <div className={styles.auth}>
           <LoginForm />
           <Form />
         </div>

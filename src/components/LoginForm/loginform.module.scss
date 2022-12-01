@@ -1,0 +1,15 @@
+@import "../../styles/scss/_base.scss";
+
+.root {
+  @include content-position;
+  flex-direction: column;
+}
+
+.text {
+  line-height: 14px;
+  color: $main-txt-cl;
+  width: 222px;
+  display: flex;
+  text-align: center;
+  margin-bottom: 16px;
+}

@@ -4,22 +4,25 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 142px;
-  background-image: url("../../img/bg-hero-mobile.png");
-  background-size: 100%;
+  background-image: url("../../img/bg-hero-mobile.svg");
+
   background-repeat: no-repeat;
+  background-size: 100%;
   background-position: top left;
 
   @include tablet {
+    width: 768px;
     padding-top: 136px;
     padding-left: 171px;
-    background-image: url("../../img/bg-hero-tablet.png");
+    background-image: url("../../img/bg-hero-tablet.svg");
   }
 
   @include desktop {
+    width: 1280px;
     padding-top: 174px;
     padding-bottom: 125px;
     padding-left: 229px;
-    background-image: url("../../img/bg-hero-desktop.png");
+    background-image: url("../../img/bg-hero-desktop.svg");
 
     @include content-position;
     justify-content: space-between;
@@ -68,4 +71,15 @@
   @include desktop {
     margin-bottom: 0;
   }
+}
+
+.auth {
+  background: $white-cl;
+  padding: 40px 20px;
+  border-radius: 30px;
+  box-shadow: 5px 10px 20px rgba(170, 178, 197, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
