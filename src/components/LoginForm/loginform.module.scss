@@ -8,8 +8,13 @@
 .text {
   line-height: 14px;
   color: $main-txt-cl;
-  width: 222px;
+  max-width: 222px;
   display: flex;
   text-align: center;
   margin-bottom: 16px;
+}
+
+.textlog {
+  width: 100%;
+  text-align: left;
 }

@@ -7,7 +7,9 @@ const LoginForm = () => {
     <div className={styles.root}>
       <p className={styles.text}>You can log in with your Google Account:</p>
       <ButtonGoogle />
-      <p>Or log in using an email and password, after registering:</p>
+      <p className={`${styles.text} ${styles.textlog} `}>
+        Or log in using an email and password, after registering:
+      </p>
     </div>
   );
 };
