@@ -23,7 +23,7 @@
   margin-bottom: 20px;
 }
 
-.forminput:last-child {
+.forminput:last-of-type {
   margin-bottom: 40px;
 }
 
@@ -36,7 +36,6 @@ input::placeholder {
 
 .allbtn {
   display: flex;
-  margin-top: 20px;
 }
 
 .btn {
