@@ -8,10 +8,15 @@
 .text {
   line-height: 14px;
   color: $main-txt-cl;
-  max-width: 222px;
+  width: 222px;
   display: flex;
   text-align: center;
   margin-bottom: 16px;
+
+  @include tablet {
+    width: 248px;
+    margin-bottom: 20px;
+  }
 }
 
 .textlog {
