@@ -28,8 +28,8 @@
     padding-left: 229px;
     background-image: url("../../img/bg-hero-desktop.svg");
 
-    @include content-position;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
 }
 
