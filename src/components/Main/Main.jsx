@@ -4,8 +4,9 @@ import LoginForm from "../LoginForm";
 import styles from "./main.module.scss";
 
 const Main = () => {
+  // TODO: add paddings here
   return (
-    <main>
+    <div>
       <div className={styles.root}>
         <div className={styles.hero}>
           <h1 className={styles.title}>My Wallet</h1>
@@ -16,7 +17,7 @@ const Main = () => {
           <Form />
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 

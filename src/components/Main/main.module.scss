@@ -1,36 +1,36 @@
 @import "../../styles/scss/_base.scss";
 
 .root {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  // display: flex;
+  // align-items: center;
+  // flex-direction: column;
 
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 142px;
-  background-image: url("../../img/bg-hero-mobile.svg");
+  // padding-left: 20px;
+  // padding-right: 20px;
+  // padding-top: 142px;
+  // background-image: url("../../img/bg-hero-mobile.svg");
 
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: top left;
+  // background-repeat: no-repeat;
+  // background-size: 100%;
+  // background-position: top left;
 
-  @include tablet {
-    width: 768px;
-    padding-top: 136px;
-    padding-left: 171px;
-    background-image: url("../../img/bg-hero-tablet.svg");
-  }
+  // @include tablet {
+  //   width: 768px;
+  //   padding-top: 136px;
+  //   padding-left: 171px;
+  //   background-image: url("../../img/bg-hero-tablet.svg");
+  // }
 
-  @include desktop {
-    width: 1280px;
-    padding-top: 174px;
-    padding-bottom: 125px;
-    padding-left: 229px;
-    background-image: url("../../img/bg-hero-desktop.svg");
+  // @include desktop {
+  //   width: 1280px;
+  //   padding-top: 174px;
+  //   padding-bottom: 125px;
+  //   padding-left: 229px;
+  //   background-image: url("../../img/bg-hero-desktop.svg");
 
-    align-items: center;
-    flex-direction: row;
-  }
+  //   align-items: center;
+  //   flex-direction: row;
+  // }
 }
 
 .hero {

@@ -1,0 +1,37 @@
+@import "../../styles/scss/_base.scss";
+
+.main {
+  // TODO: add header height to variables
+  min-height: calc(100vh - 56px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 142px;
+  background-image: url("../../img/bg-hero-mobile.svg");
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top left;
+
+  @include tablet {
+    width: 768px;
+    padding-top: 136px;
+    padding-left: 171px;
+    background-image: url("../../img/bg-hero-tablet.svg");
+  }
+
+  @include desktop {
+    width: 1280px;
+    padding-top: 174px;
+    padding-bottom: 125px;
+    padding-left: 229px;
+    background-image: url("../../img/bg-hero-desktop.svg");
+
+    align-items: center;
+    flex-direction: row;
+  }
+}
